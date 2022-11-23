@@ -1,7 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* #00FFF9 */
 html,
 body {
   padding: 0;
   margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #222428;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
