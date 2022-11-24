@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 export default function LandingPage()
 {
 	return (
-		<div className="flex flex-row-reverse flex-wrap justify-evenly h-4/5 w-full">
+		<div className="flex flex-row-reverse flex-wrap justify-center  h-4/5 w-full">
 				<div className="flex self-start justify-center">
 					<Image className={styles.Img} src={Me} width={480} height={480}/>
 				</div>
