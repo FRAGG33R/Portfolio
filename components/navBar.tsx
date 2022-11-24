@@ -1,9 +1,10 @@
 import Logo from '../assets/Logo.jpg'
 import Image from 'next/image'
-import { Fragment } from 'react'
+import { motion } from "framer-motion"
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 export default function NavBar() {
+	//framer motion
 	const navigation = [
 		{ name: 'Home', href: '#', current: true },
 		{ name: 'About', href: '#', current: false },
