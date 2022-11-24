@@ -4,7 +4,7 @@
 	--offset: 20px;
 	--gap: 5px;
 	
-	--_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+	--_c: var(--color) var(--border), rgba(240, 24, 24, 0) 0 calc(100% - var(--border)),var(--color) 0;
 	--_o: calc(3*var(--offset));
 	padding: 
 	  calc(var(--gap) + var(--border))
@@ -16,7 +16,7 @@
 	  linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
 	background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
 	background-repeat: no-repeat;
-	filter: grayscale(.4);
+	filter: grayscale(.5);
 	transition: .5s;
 	cursor: pointer;
   }
