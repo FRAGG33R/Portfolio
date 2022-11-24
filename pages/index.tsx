@@ -6,7 +6,7 @@ import LandingPage from '../components/landingPage'
 export default function Home(){
   return (
 	//include my component
-	<div className='h-100 w-screen'>
+	<div className='h-screen w-screen'>
 		<NavBar />
 		<LandingPage />
 	</div>

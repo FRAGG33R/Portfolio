@@ -53,7 +53,7 @@ export default function NavBar() {
 			  <div className="hidden sm:ml-12 sm:block">
 				<div className="flex space-x-8">
 				  {navigation.map((item) => (
-						<a href={item.href} className={classNames(
+						<a key={null} href={item.href} className={classNames(
 							'text-white',
 							'px-3 py-2 rounded-md text-lg font-normal',
 							'relative group'
