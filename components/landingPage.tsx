@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Me from '../assets/Me.jpg'
+import Me from '../assets/Me_2.jpg'
 import styles from '../styles/landingPage.module.css'
 export default function LandingPage()
 {
