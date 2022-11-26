@@ -23,7 +23,7 @@ export default function NavBar() {
 	  <>
 		<div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 		  <div className="relative flex h-20 items-center justify-between">
-			<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+			<div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
 			  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
 				<span className="sr-only">Open main menu</span>
 				{open ? (
@@ -50,7 +50,7 @@ export default function NavBar() {
 					width={0}
 				/>
 			  </div>
-			  <div className="hidden sm:ml-12 sm:block">
+			  <div className="hidden sm:ml-12 lg:block">
 				<div className="flex space-x-8">
 				  {navigation.map((item) => (
 						<a key={null} href={item.href} className={classNames(
@@ -69,7 +69,7 @@ export default function NavBar() {
 		
 		  </div>
 		</div>
-		<Disclosure.Panel className="sm:hidden">
+		<Disclosure.Panel className="lg:hidden">
 		  <div className="space-y-1 px-2 pt-2 pb-3">
 			{navigation.map((item) => (
 			  <Disclosure.Button

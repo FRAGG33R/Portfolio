@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Me from '../assets/Me_2.jpg'
 import styles from '../styles/landingPage.module.css'
+import Spline from '@splinetool/react-spline';
+
 import Typewriter from 'typewriter-effect';
 import Github from '../assets/github.gif'
 import Linkedin from '../assets/linkedin.gif'
@@ -9,8 +11,8 @@ import Link from "next/link";
 export default function LandingPage()
 {
 	return (
-		<div className="flex flex-row-reverse flex-wrap justify-center  h-4/5 w-full">
-				<div className="flex self-start justify-center">
+		<div className="flex flex-row-reverse flex-wrap justify-center  h-4/5 w-screen">
+				{/* <div className="flex self-start justify-center">
 					<Image className={styles.Img} src={Me} width={480} height={480}/>
 				</div>
 				<div className="flex justify-center items-center flex-col h-4/6 md:w-2/4 xl:w-3/12 flex-wrap font-mono text-white lg:text-3xl sm:text-xl ubpixel-antialiased font-semibold tracking-wide text-left">
@@ -51,7 +53,7 @@ export default function LandingPage()
 							</div>
 						<div>
 					</div>
-				</div>
+				</div> */}
 		</div>
 	);
 }
