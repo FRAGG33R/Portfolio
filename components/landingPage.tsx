@@ -2,11 +2,11 @@ import Image from "next/image"
 import Me from '../assets/Me_2.jpg'
 import styles from '../styles/landingPage.module.css'
 import Spline from '@splinetool/react-spline';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Typewriter from 'typewriter-effect';
-import Github from '../assets/github.gif'
-import Linkedin from '../assets/linkedin.gif'
-import Twitter from '../assets/twitter.gif'
 export default function LandingPage() {
 	return (
 		<div className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center h-4/5 w-screen 2xl:bg-red-500">
@@ -40,20 +40,20 @@ export default function LandingPage() {
 						}}
 					/>
 				</div>
-				<div className="ext-white xs:text-xs md:text-lg md:w-3/4 font-extralight text-center md:pb-5">
+				<div className="ext-white xs:text-xs md:text-lg md:w-3/4 font-normal text-center md:pb-5">
 						<p>
 							Im a Web developer specializing in front-end, I have Strong background in HTML, CSS, Js and Ts, also proficient in Reactjs, Nextjs, and Web3js, I'm knowledgeable in newest blockchain technologies and web3 researching.
 						</p>
 				</div>
 				<div className="flex flex-row flex-wrap lg:pt-6">
 					<div className="h-20 w-20">
-						<Image alt="Github icon" src={Github} width={100} height={100}/>
+						<FontAwesomeIcon className="hover:text-fav-color w-9 h-9" icon={faGithub} />
 					</div>
 					<div className="h-20 w-20">
-						<Image alt="Linkedin icon" src={Linkedin} width={100} height={100}/>
+						<FontAwesomeIcon className="hover:text-fav-color w-9 h-9" icon={faLinkedin} />
 					</div>
 					<div className="h-20 w-20">
-						<Image alt="Twitter icon" src={Twitter} width={100} height={100}/>
+						<FontAwesomeIcon className="hover:text-fav-color w-9 h-9" icon={faTwitter} />
 					</div>
 				</div> 
 			</div>
