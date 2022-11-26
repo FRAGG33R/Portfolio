@@ -19,6 +19,7 @@
 	filter: grayscale(.5);
 	transition: .5s;
 	cursor: pointer;
+	/* height: 50%; */
   }
   .Img:hover {
 	background-position: 0px 0px;

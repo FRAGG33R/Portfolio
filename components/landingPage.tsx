@@ -7,16 +7,11 @@ import Typewriter from 'typewriter-effect';
 import Github from '../assets/github.gif'
 import Linkedin from '../assets/linkedin.gif'
 import Twitter from '../assets/twitter.gif'
-import Link from "next/link";
-export default function LandingPage()
-{
+export default function LandingPage() {
 	return (
-		<div className="flex flex-row-reverse flex-wrap justify-center  h-4/5 w-screen">
-				{/* <div className="flex self-start justify-center">
-					<Image className={styles.Img} src={Me} width={480} height={480}/>
-				</div>
-				<div className="flex justify-center items-center flex-col h-4/6 md:w-2/4 xl:w-3/12 flex-wrap font-mono text-white lg:text-3xl sm:text-xl ubpixel-antialiased font-semibold tracking-wide text-left">
-						<p>Hi, I'm <span className="text-fav-color">Aissam</span></p>
+		<div className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center h-4/5 w-screen">
+				<div className="xs:w-full lg:w-1/2 h-full lg:flex lg:items-center lg:justify-center">
+					<p>Hi, I'm <span className="text-fav-color">Aissam</span></p>
 							<div>
 								<Typewriter
 									options={{
@@ -53,7 +48,10 @@ export default function LandingPage()
 							</div>
 						<div>
 					</div>
-				</div> */}
+				</div>
+				<div className="xs:w-full lg:w-1/2 h-full flex items-center justify-center">
+					<Image className={styles.Img} src={Me} width={450} height={450}/>
+				</div>
 		</div>
 	);
 }
