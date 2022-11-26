@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;700&family=Montserrat:ital,wght@0,700;0,800;1,300&display=swap');
 .Img {
 	--color: #00ccc2;
 	--border: 10px;
@@ -19,10 +20,26 @@
 	filter: grayscale(.5);
 	transition: .5s;
 	cursor: pointer;
-	/* height: 50%; */
   }
   .Img:hover {
 	background-position: 0px 0px;
 	background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
 	filter: grayscale(0);
-  }
+
+}
+
+@media only screen and (max-width: 500px) {
+.Img{
+	height: 310px;
+	width: 280px;
+	--border:5px;
+	--offset: 8px;
+	--gap: 3px;
+}
+}
+@media only screen and (max-width: 400px) {
+.Img{
+	height: 280px;
+	width: 260px;
+}
+}
