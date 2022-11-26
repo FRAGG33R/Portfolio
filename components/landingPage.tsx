@@ -40,10 +40,10 @@ export default function LandingPage() {
 						}}
 					/>
 				</div>
-				<div className="ext-white xs:text-xs md:text-lg md:w-3/4 font-normal text-center md:pb-5">
-						<p>
-							Im a Web developer specializing in front-end, I have Strong background in HTML, CSS, Js and Ts, also proficient in Reactjs, Nextjs, and Web3js, I'm knowledgeable in newest blockchain technologies and web3 researching.
-						</p>
+				<div className="ext-white xs:text-xs md:text-lg md:w-3/4 font-light  text-center md:pb-5 tracking-widest ">
+					<p>
+						Im a Web developer specialized in front-end. I'm also passionate about the newest technologies such as blockchain, web3, smart contracts, decentralized applications.
+					</p>
 				</div>
 				<div className="flex flex-row flex-wrap lg:pt-6">
 					<div className="h-20 w-20">
