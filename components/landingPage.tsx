@@ -25,13 +25,13 @@ export default function LandingPage() {
 		}
 	};
 	const __img_container = {
-		hidden: { opacity: 1, scale: 0 },
+		hidden: { opacity: 0 },
 			visible: {
 			opacity: 1,
-			scale: 1,
 			transition: {
-				delayChildren: 0.45,
-				staggerChildren: 0.3
+				delayChildren: 0.50,
+				staggerChildren: 0.1,
+				duration: 2.7
 			}
 		}
 	};
@@ -43,9 +43,8 @@ export default function LandingPage() {
 		}
 	};
 	const __img = {
-		hidden: { x : 250, opacity: 0 },
+		hidden: { opacity: 0 },
 		visible: {
-			x: 0,
 			opacity: 1
 		}
 	};
