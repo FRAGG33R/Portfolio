@@ -12,6 +12,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { useRef } from "react"
 import Typewriter from 'typewriter-effect';
 import Link from "next/link"
+
 export default function LandingPage() {
 	const container = {
 		hidden: { opacity: 1, scale: 0 },
