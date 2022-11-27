@@ -39,12 +39,12 @@ export default function LandingPage() {
 		}
 	};
 	return (
-		<motion.div
-			variants={container}
-			initial="hidden"
-			animate="visible"
-			className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center h-4/5 w-screen 2xl:bg-red-500">
-			<motion.div	className="xs:w-full lg:w-1/2 xl:w-2/6 h-full flex flex-col items-center justify-center lg:text-5xl xs:text-3xl text-white font-Bai">
+		<div className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center h-4/5 w-screen 2xl:bg-red-500">
+			<motion.div
+					variants={container}
+					initial="hidden"
+					animate="visible"
+					className="xs:w-full lg:w-1/2 xl:w-2/6 h-full flex flex-col items-center justify-center lg:text-5xl xs:text-3xl text-white font-Bai">
 				<motion.div variants={item} className="text-white md:text-lg xs:text-xs font-extralight md:pb-5">
 					<p>WELCOME TO MY WORLD</p>
 				</motion.div>
@@ -97,9 +97,15 @@ export default function LandingPage() {
 					</div>
 				</motion.div> 
 			</motion.div>
-			<motion.div variants={__img} className="xs:w-full lg:w-1/2 xl:w-2/6 h-full flex items-center justify-center pb-6">
-				<Image alt="image" className={styles.Img} src={Me} width={550} height={550}/>
+			<motion.div
+			variants={container}
+			initial="hidden"
+			animate="visible"
+			className="xs:w-full lg:w-1/2 xl:w-2/6 h-full flex items-center justify-center pb-6">
+				<motion.div variants={__img}>
+					<Image alt="image" className={styles.Img} src={Me} width={550} height={550}/>
+				</motion.div>
 			</motion.div>
-		</motion.div>
+		</div>
 	);
 }
