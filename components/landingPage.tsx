@@ -60,7 +60,7 @@ export default function LandingPage() {
 						}}
 					/>
 				</div>
-				<div className="ext-white xs:text-xs md:text-lg lg:text-xl md:w-3/4 font-light  text-center md:pb-5 tracking-widest pt-6">
+				<div className="text-white xs:text-xs md:text-lg lg:text-xl xl:w-[700px] lg:w-[500px] md:w-[500px] xs:w-[300px] font-light  xl:text-center xs:text-left md:pb-5 tracking-widest pt-6">
 					<p>
 						Im a Web developer specialized in front-end. I'm also passionate about the newest technologies such as blockchain, web3, smart contracts, decentralized applications.
 					</p>
