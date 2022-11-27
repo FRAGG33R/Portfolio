@@ -20,7 +20,18 @@ export default function LandingPage() {
 			scale: 1,
 			transition: {
 				delayChildren: 0.1,
-				staggerChildren: 0.22
+				staggerChildren: 0.3
+			}
+		}
+	};
+	const __img_container = {
+		hidden: { opacity: 1, scale: 0 },
+			visible: {
+			opacity: 1,
+			scale: 1,
+			transition: {
+				delayChildren: 0.45,
+				staggerChildren: 0.3
 			}
 		}
 	};
@@ -60,6 +71,9 @@ export default function LandingPage() {
 							delay: 110,
 						}}
 						onInit={(typewriter) => {
+							typewriter.typeString('')
+							.deleteAll()
+							.pauseFor(350)
 							typewriter.typeString('web developer.')
 							.pauseFor(2000)
 							.changeDeleteSpeed(65)
@@ -98,7 +112,7 @@ export default function LandingPage() {
 				</motion.div> 
 			</motion.div>
 			<motion.div
-			variants={container}
+			variants={__img_container}
 			initial="hidden"
 			animate="visible"
 			className="xs:w-full lg:w-1/2 xl:w-2/6 h-full flex items-center justify-center pb-6">
