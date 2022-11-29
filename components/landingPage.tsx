@@ -21,7 +21,7 @@ export default function LandingPage() {
 			scale: 1,
 			transition: {
 				delayChildren: 0.1,
-				staggerChildren: 0.3
+				staggerChildren: 0.27
 			}
 		}
 	};
@@ -30,7 +30,7 @@ export default function LandingPage() {
 			visible: {
 			opacity: 1,
 			transition: {
-				delayChildren: 0.50,
+				delayChildren: 0.40,
 				staggerChildren: 0.1,
 				duration: 2.7
 			}
@@ -88,9 +88,10 @@ export default function LandingPage() {
 						}}
 					/>
 				</motion.div>
-				<motion.div variants={item} className="flex items-center justify-centertext-white xs:text-xs md:text-lg lg:text-xl xl:w-[700px] lg:w-[500px] md:w-[500px] xs:w-[300px] font-light  xl:text-center xs:text-left md:pb-5 tracking-widest pt-6">
+				<motion.div variants={item} className="flex items-center justify-centertext-white xs:text-xs md:text-lg lg:text-xl xl:w-[700px] lg:w-[500px] md:w-[500px] xs:w-[300px] font-light  xl:text-center xs:text-left md:pb-5 tracking-widest md:pt-6">
 					<p>
-						Im a Web developer specialized in front-end. I'm also passionate about the newest technologies such as blockchain, web3, smart contracts, decentralized applications.
+						For more than three years, I work hard everyday to turn code into magic.
+						However, I found out that  web3 is the magic itself.
 					</p>
 				</motion.div>
 				<motion.div variants={item} className="flex flex-row  justify-center items-center pt-6">
