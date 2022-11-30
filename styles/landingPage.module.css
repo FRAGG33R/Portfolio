@@ -43,3 +43,39 @@
 	width: 200px;
 }
 }
+
+.mouse{
+	width: 35px;
+	height: 60px;
+	border: 3px solid #00ccc2;
+	border-radius: 60px;
+	position: relative;
+}
+.mouse::before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #00ccc2;
+	border-radius: 50%;
+	opacity: 1;
+	animation: wheel 2s infinite;
+	-webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}

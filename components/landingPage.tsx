@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Me from '../assets/Me_2.jpg'
 import styles from '../styles/landingPage.module.css'
-// import Spline from '@splinetool/react-spline';
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -50,6 +49,7 @@ export default function LandingPage() {
 		}
 	};
 	return (
+		<div className="flex flex-col items-center justify-end h-screen w-screen">
 		<div className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center h-4/5 w-screen">
 			<motion.div
 					variants={container}
@@ -122,5 +122,10 @@ export default function LandingPage() {
 				</motion.div>
 			</motion.div>
 		</div>
+			<div className="flex items-center justify-center md:h-1/5 md:w-full ">
+			<div className={styles.mouse}></div>	 
+			</div>
+		</div>
+		
 	);
 }
