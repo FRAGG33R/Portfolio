@@ -122,7 +122,7 @@ export default function LandingPage() {
 				</motion.div>
 			</motion.div>
 		</div>
-			<div className="flex items-center justify-center md:h-1/5 md:w-full ">
+			<div className="flex items-end justify-center md:h-1/5 md:w-full pb-5">
 			<div className={styles.mouse}></div>	 
 			</div>
 		</div>
