@@ -50,7 +50,7 @@ export default function LandingPage() {
 	};
 	return (
 		<div className="flex flex-col items-center justify-end h-screen w-screen">
-		<div className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center h-4/5 w-screen">
+		{/* <div className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center h-4/5 w-screen">
 			<motion.div
 					variants={container}
 					initial="hidden"
@@ -124,7 +124,7 @@ export default function LandingPage() {
 		</div>
 			<div className="flex items-end justify-center md:h-1/5 md:w-full pb-5">
 			<div className={styles.mouse}></div>	 
-			</div>
+			</div> */}
 		</div>
 		
 	);
