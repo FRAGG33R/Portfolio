@@ -20,6 +20,7 @@
 	filter: grayscale(.5);
 	transition: .5s;
 	cursor: pointer;
+	width: 45vh;
   }
   .Img:hover {
 	background-position: 0px 0px;
@@ -28,20 +29,31 @@
 
 }
 
+@media only screen and (max-width: 1000px) {
+	.Img{
+		/* height: 200px; */
+		width: 29%;
+		--border:5px;
+		--offset: 8px;
+		--gap: 3px;
+	}
+}
+
 @media only screen and (max-width: 500px) {
-.Img{
-	height: 310px;
-	width: 250px;
-	--border:5px;
-	--offset: 8px;
-	--gap: 3px;
+	.Img{
+		height: 310px;
+		width: 250px;
+		--border:5px;
+		--offset: 8px;
+		--gap: 3px;
+	}
 }
-}
+
 @media only screen and (max-width: 400px) {
-.Img{
-	height: 280px;
-	width: 200px;
-}
+	.Img{
+		height: 280px;
+		width: 200px;
+	}
 }
 
 .mouse{

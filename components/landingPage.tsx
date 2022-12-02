@@ -49,8 +49,8 @@ export default function LandingPage() {
 		}
 	};
 	return (
-		<div className="flex flex-col items-center justify-end h-screen w-screen">
-		<div className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center h-4/5 w-screen">
+		<div className="flex flex-col items-center justify-end h-full w-full">
+		<div className="flex lg:flex-row xs:flex-col-reverse lg:justify-center items-center xl:h-4/5 md:h-full w-screen">
 			<motion.div
 					variants={container}
 					initial="hidden"
@@ -117,8 +117,8 @@ export default function LandingPage() {
 			initial="hidden"
 			animate="visible"
 			className="xs:w-full lg:w-1/2 xl:w-2/6 h-full flex items-center justify-center pb-6">
-				<motion.div variants={__img}>
-					<Image alt="image" className={styles.Img} src={Me} width={550} height={550}/>
+				<motion.div variants={__img} className='flex items-center justify-center'>
+					<Image alt="image" className={styles.Img} src={Me} />
 				</motion.div>
 			</motion.div>
 		</div>
