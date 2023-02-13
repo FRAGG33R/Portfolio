@@ -14,7 +14,7 @@ export default function NavBar() {
 		{ name: 'Projects', href: '#', current: false },
 		{ name: 'Contact', href: '#', current: false },
 	  ]
-	  function classNames(...classes) {
+	  function classNames(...classes : any[]) {
 		return classes.filter(Boolean).join(' ')
 	  }
   return (
