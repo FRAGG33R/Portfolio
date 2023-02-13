@@ -13,7 +13,7 @@ export default function Home(){
   return (
 	<div className='h-screen w-screen'>
 		<NavBar />
-		<AnimatedCursor color="0, 204, 194"/>
+		<AnimatedCursor/>
 		<Parallax
 		pages={2}
 		style={{ top: '0', left: '0' }}>
